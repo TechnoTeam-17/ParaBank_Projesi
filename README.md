@@ -1,30 +1,31 @@
 # ParaBank_Projesi
 
-ParaBank_Projesi
-
 Techno Study Batch 4, Group 17, Friday Project / date 29-09-2023
 
 In this project we use JAVA and Test Tools.
 
-Domain: https:https://para.testar.org/
+Domain: https://cleverppc.com/prestashop4/
 
 ##Team-17 technostudyteam17@gmail.com
-    
-    Hakan Kılıç - QA Lead  (Aliyamnuveybam@gmail.com)
-    Neslihan Terlemez - Tester ( terlemez.neslihan@gmail.com )
-    Alpaslan Alemdar - Tester ( alpaslanalemdar@yandex.com)
-    Nergis Reçel - Tester (nergisrecel@hotmail.com)
-    Aygul Abilova - Tester (abilovaygul@gmail.com)
-    Omer Al- Tester (xfinaldest@gmail.com)
-    Sokol Rrustemi- Tester (sokolrrustemi@gmail.com)
+
+- Hakan Kılıç - QA Lead   (Aliyamnuveybam@gmail.com)
+- Neslihan Terlemez - Tester ( terlemez.neslihan@gmail.com )
+- Alpaslan Alemdar - Tester  ( alpaslanalemdar@yandex.com)
+- Nergis Reçel - Tester (nergisrecel@hotmail.com)
+- Aygul Abilova - Tester (abilovaygul@gmail.com)
+- Omer Al- Tester (xfinaldest@gmail.com)
+- Sokol Rrustemi- Tester (sokolrrustemi@gmail.com) 
+   
 
 Getting Started
+---------------
 
 The easiest way to get started is to clone the repository:
 
+```bash
 # File > New > Project From Version Control 
 # Copy to URL
-git@github.com: https://github.com/TechnoTeam-17/ParaBank_Projesi
+git@github.com: https://github.com/TechnoTeam-17/ParaBank_Projesi.git
 # open project at Intellij
 # select project JDK
 jdk1.8
@@ -61,27 +62,31 @@ commons-io:commons-io:2.11.0
 Run 'Main'
 
  
+```
 
 List of Dependencies
-Package 	Description
-Cucumber 	Next Generation Testing Tool.
-Selenium 	Browser Automation Framework.
-cucumber-Testng 	Browser Automation Framework.
-TestNG 	Browser Automation Framework.
-slf4j 	The Simple Logging Facade for Java.
-slf4j-beta2 	The Simple Logging Facade for Java.
-cucumber7-adapter 	Aventstack Library
-commons-lang3 	The Apache Commons IO library
-commons.io 	The Apache Commons IO library
-Rules Of Pull Request
+----------------
 
-    Update your codes from main branch before you pull request
-    Don't use Thread.Sleep
-    Don't use Turkish Character
-    Don't use extra space
-    Use logical comment lines
-    Use ./screenshots folder for bug & facility report
-    Only work at your story
-    Don't add any scenario you want
+| Package                 | Description                         |
+|-------------------------|-------------------------------------|
+| Cucumber                | Next Generation Testing Tool.       |
+| Selenium                | Browser Automation Framework.       |
+| cucumber-Testng         | Browser Automation Framework.       |
+| TestNG                  | Browser Automation Framework.       |
+| slf4j                   | The Simple Logging Facade for Java. | 
+| slf4j-beta2             | The Simple Logging Facade for Java. |
+| cucumber7-adapter       | Aventstack Library                  |
+| commons-lang3           | The Apache Commons IO library       |
+| commons.io              | The Apache Commons IO library       |
 
-Wish you the best!
+## Rules Of Pull Request
+- Update your codes from main branch before you pull request
+- Don't use Thread.Sleep
+- Don't use Turkish Character
+- Don't use extra space
+- Use logical comment lines
+- Use ./screenshots folder for bug & facility report
+- Only work at your story
+- Don't add any scenario you want
+
+### Wish you the best! 
