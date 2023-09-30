@@ -4,7 +4,7 @@ Techno Study Batch 4, Group 17, Friday Project / date 29-09-2023
 
 In this project we use JAVA and Test Tools.
 
-Domain: https:https://para.testar.org/
+Domain: https://para.testar.org/
 
 ##Team-17 technostudyteam17@gmail.com
 
