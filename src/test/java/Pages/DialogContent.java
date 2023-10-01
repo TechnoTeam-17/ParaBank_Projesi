@@ -9,6 +9,8 @@ import java.util.List;
 
 public class DialogContent extends Parent {
 
+    public WebElement CreateAccount;
+
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
@@ -27,19 +29,19 @@ public class DialogContent extends Parent {
     public WebElement state;
     @FindBy(xpath = "//input[@id = 'customer.address.zipCode']")
     public WebElement zipcode;
-    @FindBy(xpath = "//input[@id = 'customer.address.phoneNumber']")
+    @FindBy(xpath = "//input[@id = 'customer.phoneNumber']")
     public WebElement phone;
-    @FindBy(xpath = "//input[@id = 'customer.address.ssn']")
+    @FindBy(xpath = "//input[@id = 'customer.ssn']")
     public WebElement ssn;
-    @FindBy(xpath = "//input[@id = 'customer.address.username']")
+    @FindBy(xpath = "//input[@id = 'customer.username']")
     public WebElement userName;
-    @FindBy(xpath = "//input[@id = 'customer.address.password']")
+    @FindBy(xpath = "//input[@id = 'customer.password']")
     public WebElement password;
     @FindBy(xpath = "//input[@id = 'repeatedPassword']")
     public WebElement confirm;
     @FindBy(xpath = " //input[@value= 'Register']")
-    public WebElemet register;
-    @FindBy(xpath = "//p[contains(text(),' Your account was created successfully. You are now logged in.')]")
+    public WebElement REGISTER;
+    @FindBy(xpath = " //h1[@class= 'title']")
     public WebElement verifyLogin;
 
 }
