@@ -5,7 +5,6 @@ Feature: Creating User Registration (Register)
     Given Navigate To ParaBank
     When Enter click Register in button
     Then Enter Data in Text Box
-    And Enter click Register
     And User should login successfully
 
 
