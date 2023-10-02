@@ -1,6 +1,6 @@
 Feature: Creating User Registration (Register)
 
-  @SmokeTest
+  @SmokeTest @Regression
   Scenario: US01_Reg
     Given Navigate To ParaBank
     When Enter click Register in button
