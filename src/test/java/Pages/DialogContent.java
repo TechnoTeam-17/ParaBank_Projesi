@@ -46,10 +46,17 @@ public class DialogContent extends Parent {
 
 
     //****************************US_02************************
+        @FindBy(xpath ="//input[@name = 'username']")
+    public WebElement usernameLoginpage;
 
+        @FindBy(xpath ="//input[@name = 'password']")
+        public WebElement passwordLoginpage;
 
+    @FindBy(xpath ="//input[@type= 'submit']")
+    public WebElement loginButton;
 
-
+    @FindBy(xpath = "//div[@id= 'leftPanel']//b")
+    public WebElement verifyLogin2;
 
     //****************************US_03************************
 
