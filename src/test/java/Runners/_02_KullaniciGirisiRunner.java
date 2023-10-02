@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-        tags = "@SmokeTest ,@Regression",
+      //  tags = "@SmokeTest ,@Regression",
         features = {"src/test/java/featureFiles/_02_Kullanici_Girisi.feature"},
         glue={"StepDefinitions"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
