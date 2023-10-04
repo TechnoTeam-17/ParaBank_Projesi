@@ -12,9 +12,49 @@ public class _03_FaturaOdeme {
 
     DialogContent dc=new DialogContent();
 
-    @When("Enter username and password and click login button")
-    public void login() {
+ //  @When("Enter username and password and click login button")
+ //  public void login() {
+ //
+ //
+ //
+ //
+ //
+ //
+ //
+ //
+ //
+ //
+ //
+ //
+
+ //  }
+    @Then("Bill Payment was successful")
+    public void billpayment(){dc.verifyContainsText(dc.verifyLogin,"Bill Payment Complete");}
+
+ //  @Given("Navigate to parabank")
+ //  public void navigateToParabank() {
+
+ //  }
+
+    @When("Click Bill Payment Service")
+    public void clickBillPaymentService() {
         dc.myClick(dc.BillPay);
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    @Then("Enter payee information")
+    public void enterPayeeInformation() {
+
         dc.mySendKeys(dc.PayeeName, "Mina");
         dc.mySendKeys(dc.Address, "America");
         dc.mySendKeys(dc.City, "Los-Angeles");
@@ -24,27 +64,14 @@ public class _03_FaturaOdeme {
         dc.mySendKeys(dc.Account, "12345");
         dc.mySendKeys(dc.VerifyAccount, "12345");
         dc.mySendKeys(dc.Amount, "100");
-        dc.mySendKeys(dc.FromAccountt, "Mina");
-        dc.myClick(dc.SendPayment);
+        dc.selectEngine("fromAccountId",0);
 
-    }
-    @Then("Bill Payment was successful")
-    public void billpayment(){dc.verifyContainsText(dc.verifyLogin,"Bill Payment Complete");}
-
-    @Given("Navigate to parabank")
-    public void navigateToParabank() {
-
-    }
-
-    @When("Click Bill Payment Service")
-    public void clickBillPaymentService() {
-    }
-
-    @Then("Enter payee information")
-    public void enterPayeeInformation() {
     }
 
     @And("Send Payment")
     public void sendPayment() {
+
+
+        dc.myClick(dc.SendPayment);
     }
 }
