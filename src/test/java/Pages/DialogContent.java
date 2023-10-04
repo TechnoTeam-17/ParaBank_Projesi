@@ -60,11 +60,31 @@ public class DialogContent extends Parent {
 
     //****************************US_03************************
 
+    @FindBy(xpath = "//a[@href='/parabank/billpay.htm']")
+    public WebElement BillPay;
+    @FindBy(name = "payee.name")
+    public WebElement PayeeName;
+    @FindBy(name = "payee.address.street")
+    public WebElement Address;
+    @FindBy(name = "payee.address.city")
+    public WebElement City;
+    @FindBy(name = "payee.address.state")
+    public WebElement State;
+    @FindBy(name = "payee.address.zipCode")
+    public WebElement ZipCode;
+    @FindBy(name = "payee.phoneNumber")
+    public WebElement Phone;
+    @FindBy(name = "payee.accountNumber")
+    public WebElement Account;
+    @FindBy(name = "verifyAccount")
+    public WebElement VerifyAccount;
+    @FindBy(name = "amount")
+    public WebElement Amount;
 
-
-
-
-
+    @FindBy(name = "fromAccountId")
+    public WebElement FromAccountt;
+    @FindBy(xpath = "//input[@class='button']")
+    public WebElement SendPayment;
 
     //****************************US_04************************
 
