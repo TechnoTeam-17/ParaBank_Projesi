@@ -105,6 +105,30 @@ public class DialogContent extends Parent {
 
     //****************************US_07************************
 
+    public WebElement ContactInfobutton;
+
+    @FindBy(xpath = "//a[@href='/parabank/updateprofile.htm']")
+    public WebElement UpdataContactInfoButton;
+    // @FindBy(xpath = "//input[@id ='customer.firstName']")
+    // public WebElement firstName1;
+    // @FindBy(xpath = "//input[@id ='customer.lastName']")
+    // public WebElement lastName2;
+    // @FindBy(xpath="//input[@id = 'customer.address.street']")
+    // public WebElement adress;
+    // @FindBy(xpath = "//input[@id = 'customer.address.city']")
+    // public WebElement city;
+    // @FindBy(xpath = "//input[@id = 'customer.address.state']")
+    // public WebElement state;
+    // @FindBy(xpath = "//input[@id = 'customer.address.zipCode']")
+    // public WebElement zipcode;
+    // @FindBy(xpath = "//input[@id = 'customer.phoneNumber']")
+    // public WebElement phone;
+    @FindBy(xpath = "//input[@value='Update Profile']")
+    public WebElement UPDATAPROFILEButton;
+    @FindBy(xpath = " //h1[@class='title']")
+    public WebElement verifyUpdata;
+
+}
 
 
 
@@ -116,4 +140,3 @@ public class DialogContent extends Parent {
 
 
 
-}
