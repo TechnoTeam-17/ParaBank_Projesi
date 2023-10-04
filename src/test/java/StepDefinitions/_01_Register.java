@@ -14,13 +14,9 @@ public class _01_Register  {
     Faker fk = new Faker();
 
     @Given("Navigate To ParaBank")
-    public void navigateToPrestaShop() {
-        GWD.getDriver().get("https://para.testar.org/");
-    }
-    @When("Enter click Register in button")
-    public void clickRegisterinbutton() {
-    dc.myClick(dc.Registerbutton);
-
+    public void navigateToPrestaShop() throws InterruptedException {
+        GWD.getDriver().get("https://parabank.parasoft.com/parabank/register.htm;jsessionid=7F4F5092BD42867091CCD544C10878B7");
+        Thread.sleep(2000);
     }
 
     @Then("Enter Data in Text Box")
@@ -36,7 +32,6 @@ public class _01_Register  {
         String emailfake=fk.name().username();
         dc.mySendKeys(dc.userName,emailfake);
 
-      //  dc.mySendKeys(dc.userName,"miriam");
         dc.mySendKeys(dc.password,"miriam2023");
         dc.mySendKeys(dc.confirm,"miriam2023");
         dc.myClick(dc.REGISTER);
