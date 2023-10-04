@@ -1,16 +1,21 @@
 Feature: User can update contact information
 
- +
+
+
+
 
   Background:
 
+    Given Navigate To ParaBank
+    When Enter username and password and click login button
+    Then User should log-in successfully
 
 
+  @SmokeTest
   Scenario: Updating profile contact information
 
-    Given the user is on the profile page
-    When the user clicks the "Edit Profile" option
-    And enters the new address as "New Address, City, Country"
-    And enters the new phone number as "555-555-5555"
-    And updates other contact information
-    And clicks the "Save" button
+    Given Navigate To ParaBank
+    When Enter click  UpdataContactInfoButton
+    Then Enter  in Text Box
+    And clicks the UPDATA PROFILE button
+    And User should Updata successfully
