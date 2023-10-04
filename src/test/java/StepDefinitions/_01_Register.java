@@ -12,12 +12,11 @@ public class _01_Register  {
 
     DialogContent dc = new DialogContent();
     Faker fk = new Faker();
-
-    @Given("Navigate To ParaBank")
-    public void navigateToPrestaShop() throws InterruptedException {
-        GWD.getDriver().get("https://parabank.parasoft.com/parabank/register.htm;jsessionid=7F4F5092BD42867091CCD544C10878B7");
-        Thread.sleep(2000);
-    }
+    @Given("Navigate To ParaBank in Register")
+   public void navigateToPrestaShop() throws InterruptedException {
+       GWD.getDriver().get("https://parabank.parasoft.com/parabank/register.htm;jsessionid=7F4F5092BD42867091CCD544C10878B7");
+       Thread.sleep(2000);
+   }
 
     @Then("Enter Data in Text Box")
     public void enterEMailAdressAndPassword() {
