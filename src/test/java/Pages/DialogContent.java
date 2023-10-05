@@ -21,7 +21,7 @@ public class DialogContent extends Parent {
     public WebElement firstName;
     @FindBy(xpath = "//input[@id ='customer.lastName']")
     public WebElement lastName;
-    @FindBy(xpath="//input[@id = 'customer.address.street']")
+    @FindBy(xpath = "//input[@id = 'customer.address.street']")
     public WebElement adress;
     @FindBy(xpath = "//input[@id = 'customer.address.city']")
     public WebElement city;
@@ -46,13 +46,13 @@ public class DialogContent extends Parent {
 
 
     //****************************US_02************************
-        @FindBy(xpath ="//input[@name = 'username']")
+    @FindBy(xpath = "//input[@name = 'username']")
     public WebElement usernameLoginpage;
 
-        @FindBy(xpath ="//input[@name = 'password']")
-        public WebElement passwordLoginpage;
+    @FindBy(xpath = "//input[@name = 'password']")
+    public WebElement passwordLoginpage;
 
-    @FindBy(xpath ="//input[@type= 'submit']")
+    @FindBy(xpath = "//input[@type= 'submit']")
     public WebElement loginButton;
 
     @FindBy(xpath = "//div[@id= 'leftPanel']//b")
@@ -89,18 +89,21 @@ public class DialogContent extends Parent {
     //****************************US_04************************
 
 
+    @FindBy(linkText = "Open New Account")
+    public WebElement openNewAccount;
+
+    @FindBy(xpath = "//input[@type='submit']")
+    public WebElement submitOpenNewAccountButton;
+    @FindBy(xpath = "//h1[@class='title']")
+    public WebElement accountOpenedBox;
+
+
 
 
     //****************************US_05************************
 
 
-
-
-
-
     //****************************US_06************************
-
-
 
 
     //****************************US_07************************
@@ -131,11 +134,7 @@ public class DialogContent extends Parent {
 }
 
 
-
-
-
-
-    //****************************US_08************************
+//****************************US_08************************
 
 
 

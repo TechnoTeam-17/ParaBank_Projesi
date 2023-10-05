@@ -50,8 +50,14 @@ public class Parent {
     }
 
 
-    public void selectEngine(String selectID, int indexNumber) {
-        WebElement webMenu= GWD.getDriver().findElement(By.name(selectID));
+    public void selectEngineByID(String selectID, int indexNumber) {
+        WebElement webMenu= GWD.getDriver().findElement(By.id(selectID));
+        Select ddMenu=new Select(webMenu);
+        ddMenu.selectByIndex(indexNumber);
+    }
+
+    public void selectEngineByName(String selectName, int indexNumber) {
+        WebElement webMenu= GWD.getDriver().findElement(By.name(selectName));
         Select ddMenu=new Select(webMenu);
         ddMenu.selectByIndex(indexNumber);
     }
