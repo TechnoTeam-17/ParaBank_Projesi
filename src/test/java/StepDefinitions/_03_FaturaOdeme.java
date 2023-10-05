@@ -64,7 +64,7 @@ public class _03_FaturaOdeme {
         dc.mySendKeys(dc.Account, "12345");
         dc.mySendKeys(dc.VerifyAccount, "12345");
         dc.mySendKeys(dc.Amount, "100");
-        dc.selectEngine("fromAccountId",0);
+        dc.selectEngineByID("fromAccountId",0);
 
     }
 
