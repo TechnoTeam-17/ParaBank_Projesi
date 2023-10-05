@@ -13,7 +13,7 @@ public class _01_Register  {
     DialogContent dc = new DialogContent();
     Faker fk = new Faker();
     @Given("Navigate To ParaBank in Register")
-   public void navigateToPrestaShop() throws InterruptedException {
+   public void navigateToParaBank() throws InterruptedException {
        GWD.getDriver().get("https://parabank.parasoft.com/parabank/register.htm;jsessionid=7F4F5092BD42867091CCD544C10878B7");
        Thread.sleep(2000);
    }
