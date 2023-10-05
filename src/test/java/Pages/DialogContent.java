@@ -93,7 +93,7 @@ public class DialogContent extends Parent {
     public WebElement openNewAccount;
 
     @FindBy(xpath = "//input[@type='submit']")
-    public WebElement submitOpenNewAccountButton;
+    public WebElement submitButton;
     @FindBy(xpath = "//h1[@class='title']")
     public WebElement accountOpenedBox;
 
@@ -131,11 +131,29 @@ public class DialogContent extends Parent {
     @FindBy(xpath = " //h1[@class='title']")
     public WebElement verifyUpdata;
 
-}
+
 
 
 //****************************US_08************************
 
+    @FindBy(linkText = "Request Loan")
+    public WebElement requestLoanPageLink;
+
+     @FindBy(xpath = "//input[@id='amount']")
+    public WebElement loanAmountBox;
+
+    @FindBy(xpath = "//input[@id='downPayment']")
+    public WebElement downPaymentBox;
+    @FindBy(xpath = "//div[@class='ng-scope']/p")
+    public WebElement loanRequestStatus;
 
 
 
+
+
+
+
+
+
+
+}

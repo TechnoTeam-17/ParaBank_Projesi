@@ -24,7 +24,7 @@ public class _04_Alpaslan {
     public void selectAccountTypeAndAccountIDAndSubmit() {
         dc.selectEngineByID("type",0);
         dc.selectEngineByID("fromAccountId",0);
-        dc.myClick(dc.submitOpenNewAccountButton);
+        dc.myClick(dc.submitButton);
 
     }
 
