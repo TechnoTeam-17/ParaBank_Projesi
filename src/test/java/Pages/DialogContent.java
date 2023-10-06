@@ -98,8 +98,6 @@ public class DialogContent extends Parent {
     public WebElement accountOpenedBox;
 
 
-
-
     //****************************US_05************************
 
 
@@ -132,28 +130,41 @@ public class DialogContent extends Parent {
     public WebElement verifyUpdata;
 
 
-
-
 //****************************US_08************************
 
     @FindBy(linkText = "Request Loan")
     public WebElement requestLoanPageLink;
 
-     @FindBy(xpath = "//input[@id='amount']")
+    @FindBy(xpath = "//input[@id='amount']")
     public WebElement loanAmountBox;
 
     @FindBy(xpath = "//input[@id='downPayment']")
     public WebElement downPaymentBox;
     @FindBy(xpath = "//div[@class='ng-scope']/p")
     public WebElement loanRequestStatus;
+    @FindBy(id = "type")
+    public WebElement accountType;
+    @FindBy(id = "fromAccountId")
+    public WebElement accountID;
 
 
+    public WebElement getWebElement(String strElement) {
+        switch (strElement) {
+            case "openNewAccount":
+                return this.openNewAccount;
+            case "accountType":
+                return this.accountType;
+            case "accountID":
+                return this.accountID;
+            case "submitButton":
+                return this.submitButton;
+            case "accountOpenedBox":
+                return this.accountOpenedBox;
 
 
+        }
+        return null;
 
-
-
-
-
+    }
 
 }
