@@ -1,10 +1,14 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
+import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.awt.*;
 
@@ -43,8 +47,14 @@ public class _03_FaturaOdeme {
 
 
 
-
-
+      //  public void selectEngine(String selectLocatorName, int indexNumber) {
+      //      WebElement webMenu= GWD.getDriver().findElement(By.name(selectLocatorName));
+      //      Select ddMenu=new Select(webMenu);
+      //      ddMenu.selectByIndex(indexNumber);
+//
+      //
+      //  }
+//
 
 
 
@@ -64,7 +74,7 @@ public class _03_FaturaOdeme {
         dc.mySendKeys(dc.Account, "12345");
         dc.mySendKeys(dc.VerifyAccount, "12345");
         dc.mySendKeys(dc.Amount, "100");
-        dc.selectEngineByID("fromAccountId",0);
+        dc.selectEngineByName("fromAccountId",0);
 
     }
 

@@ -56,9 +56,9 @@ public class Parent {
         ddMenu.selectByIndex(indexNumber);
     }
 
-    public void selectEngineByName(String selectName, int indexNumber) {
-        WebElement webMenu= GWD.getDriver().findElement(By.name(selectName));
-        Select ddMenu=new Select(webMenu);
-        ddMenu.selectByIndex(indexNumber);
-    }
+  public void selectEngineByName(String selectName, int indexNumber) {
+      WebElement webMenu= GWD.getDriver().findElement(By.name(selectName));
+      Select ddMenu=new Select(webMenu);
+      ddMenu.selectByIndex(indexNumber);
+  }
 }

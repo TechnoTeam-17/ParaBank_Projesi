@@ -82,7 +82,7 @@ public class DialogContent extends Parent {
     public WebElement Amount;
 
     @FindBy(name = "fromAccountId")
-    public WebElement FromAccountt;
+    public WebElement fromAccountId;
     @FindBy(xpath = "//input[@class='button']")
     public WebElement SendPayment;
 

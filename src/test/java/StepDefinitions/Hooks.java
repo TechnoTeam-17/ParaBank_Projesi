@@ -19,11 +19,11 @@ public class Hooks {
     public void after(Scenario senaryo)
     {
 
-        if (senaryo.isFailed()){
-            TakesScreenshot ts=((TakesScreenshot) GWD.getDriver());
-            byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
-            senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
-        }
+       if (senaryo.isFailed()){
+           TakesScreenshot ts=((TakesScreenshot) GWD.getDriver());
+           byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
+           senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
+       }
 
         //System.out.println("Senaryo bitti ?");
         // doğru çalışırsa burada quiti çağıracağım

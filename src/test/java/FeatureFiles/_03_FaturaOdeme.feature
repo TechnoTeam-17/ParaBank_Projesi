@@ -11,5 +11,5 @@ Feature: Paying Bills
   Scenario: Account Overview
     When Click Bill Payment Service
     Then Enter payee information
-    And Send Payment
+    And  Send Payment
 
