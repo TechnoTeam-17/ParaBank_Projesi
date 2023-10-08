@@ -5,8 +5,16 @@ Feature: Creating A New Account
     Given Navigate To ParaBank in Register
     Then Enter Data in Text Box
     And User should login successfully
+    
   @SmokeTest @Regression
   Scenario: Open New Account
-    Given Naviga to Open New Account Page
-    Then Select Account Type and Account ID and Submit
-    And Use account should succesfully opened
+    Given Click to WebElement
+      |openNewAccount|
+    Then Select Account Type and Account ID
+      |accountType|0|
+      |accountID|0|
+
+    And Click to WebElement
+      |submitButton|
+    And Verify Openning succesfully
+      |accountOpenedBox|Account Opened!|
