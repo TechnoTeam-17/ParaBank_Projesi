@@ -102,7 +102,18 @@ public class DialogContent extends Parent {
 
 
     //****************************US_06************************
+    
+    @FindBy(linkText = "Transfer Funds")
+    public WebElement transferFunds;
 
+    @FindBy(id = "amount")
+    public WebElement amountToTransfer;
+
+    @FindBy(css = "input[value='Transfer']")
+    public WebElement transfer;
+
+    @FindBy(xpath = "//h1[text()='Transfer Complete!']")
+    public WebElement transferCompleteText;
 
     //****************************US_07************************
 
