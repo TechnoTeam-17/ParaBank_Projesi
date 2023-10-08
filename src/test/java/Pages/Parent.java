@@ -3,15 +3,15 @@ package Pages;
 import Utilities.GWD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Parent {
 
@@ -56,12 +56,31 @@ public class Parent {
         ddMenu.selectByIndex(indexNumber);
     }
 
+    public String refList(WebElement element){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        List<String> refList = new ArrayList<>();
+        String ref=element.getText();
+        refList.add(ref);
+        return ref;
+    }
+
+    public void lastListClick(List<WebElement> elements){
+        WebElement element = elements.get(elements.size()-1);
+        myClick(element);
+    }
     public void selectEngineByWebElement(WebElement selectWebElement, int indexNumber) {
         //WebElement webMenu= GWD.getDriver().findElement(By.id(selectID));
         Select ddMenu=new Select(selectWebElement);
         ddMenu.selectByIndex(indexNumber);
     }
+    public void MyAssert(WebElement element,String number){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        scrollToElement(element);
+        String text=element.getText();
+        boolean countainsNumber=text.contains(number);
 
+        Assert.assertTrue(countainsNumber,"No number");
+    }
     public void selectEngineByName(String selectName, int indexNumber) {
         WebElement webMenu= GWD.getDriver().findElement(By.name(selectName));
         Select ddMenu=new Select(webMenu);
