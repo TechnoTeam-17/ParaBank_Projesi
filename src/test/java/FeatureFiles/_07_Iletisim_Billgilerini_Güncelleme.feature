@@ -1,9 +1,5 @@
 Feature: User can update contact information
 
-
-
-
-
   Background:
 
     Given Navigate To ParaBank
