@@ -6,7 +6,7 @@ Feature: Creating A New Account
     Then Enter Data in Text Box
     And User should login successfully
     
-  @SmokeTest @Regression
+  @SmokeTest 
   Scenario: Open New Account
     Given Click to WebElement
       |openNewAccount|
