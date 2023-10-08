@@ -1,25 +1,30 @@
 package StepDefinitions;
 
-import Utilities.GWD;
+import Pages.DialogContent;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class _04_YeniBankaHesabiTanimlama {
 
-    public static void main(String[] args) {
+    DialogContent dc=new DialogContent();
 
-     //   @Given("Navigate To ParaBankHomsdade")
-     //   public void navigateToPrestaShop() {
-     //       GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-     //   }
+    @Given("Naviga to Open New Account Page")
+    public void navigaToOpenNewAccountPage() {
+        dc.myClick(dc.openNewAccount);
 
+    }
 
+    @Then("Select Account Type and Account ID and Submit")
+    public void selectAccountTypeAndAccountIDAndSubmit() {
+        dc.selectEngineByID("type",0);
+        dc.selectEngineByID("fromAccountId",0);
+        dc.myClick(dc.submitButton);
 
-//         FARKLI BİR CLASSTA ÇALIŞTIM, _04_Alpaslan
-//         BURADA STEPDEFINETION OLUŞTURMAK MUMKUN OLMADI
+    }
 
-
-
-
-
-        }
+    @And("Use account should succesfully opened")
+    public void useAccountShouldSuccesfullyOpened() {
+        dc.verifyContainsText(dc.accountOpenedBox, "Account Opened!");
+    }
 }
