@@ -9,8 +9,8 @@ public class _02_KullaniciGirisi {
 
     @When("Enter username and password and click login button")
     public void login() {
-        dc.mySendKeys(dc.usernameLoginpage,"TechnoTeam17");
-        dc.mySendKeys(dc.passwordLoginpage,"TechnoTeam17");
+        dc.mySendKeys(dc.usernameLoginpage,"TechnoTeam-17");
+        dc.mySendKeys(dc.passwordLoginpage,"TechnoTeam-17");
         dc.myClick(dc.loginButton);
     }
 
